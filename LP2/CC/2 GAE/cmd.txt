@@ -1,0 +1,12 @@
+gcloud init
+
+  then login 
+
+  then connect to any project or create 
+
+gcloud app deploy
+
+  cd path of file : C:\Users\admin\Downloads\pr\CC1
+
+python -m http.server 8000
+
