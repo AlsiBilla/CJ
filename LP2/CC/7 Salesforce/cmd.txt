@@ -1,0 +1,6 @@
+krishna@ezbytes.sandbox
+
+https://exbytes-dev-ed.develop.lightning.force.com/lightning/setup/SetupOneHome/home
+
+CREATE A NEW CUSTOM OBJECT
+
