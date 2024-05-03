@@ -2,7 +2,7 @@ import webapp2
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        self.response.write("Insta ID @primetech100")
+        self.response.write("Welcome To World")
 
 
 app = webapp2.WSGIApplication([('/',MainPage)],debug=True)
