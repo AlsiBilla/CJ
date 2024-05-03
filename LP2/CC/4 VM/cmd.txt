@@ -1,0 +1,72 @@
+ls - list all the files  and directories
+cat - show the content inside a file 
+scp - it will help us to copy files from one vm to another
+cd - change directories
+mkdir - make directory
+touch - make new file
+nano - nano is an editor inside linux
+rm - remove file
+
+
+# STEPS TO WORK
+
+DOWNLOAD VIRTUAL MACHINE :- 
+
+DOWNLOAD UBUNTU VIRTUAL MACHINE DISK :- https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
+
+CREATE TWO NEW VM BY CLICKING NEW BUTTON, ADD NAME, SELECT FOLDER, SELECT TYPE, SELECT VERSION, CLICK NEXT, AGAIN NEXT, SELECT USE AN EXISTING VIRTUAL HARD DISK FILE AND SELECT THE DOWNLOADED VM DISK HERE, AND FINISH
+
+NOW CLICK FILE, THEN TOOLS & THEN NETWORK MANAGER
+
+SELECT NAT NETWORK FROM TABS AND THEN CREATE A NETWORK
+
+SELECT 1ST OS AND THEN GO TO SETTING, THEN NETWORK, AND SELECT ATTACH TO AS NAT NETWORK, AND NAME IT WITH THE CREATED NETWORK NAME
+
+MAKE SAME ON SECOND VM TOO
+
+NOW RUN BOTH VM SIMULTANEOUSLY 
+
+NOW ENTER PASSWORD :- VAGRANT
+
+NOW ls COMMAND TO CHECK FILE IN DIRECTORY
+
+NOW ifconfig IN BOTH VM FOR IP ADDRESS
+
+NOW WE HAVE VM1 : 10.0.2.4 & VM2 : 10.0.2.5
+
+IF ANY ERROR CCUE RELATED TO IFCONFIG RUN THIS : sudo apt install net-tools
+
+NOW FROM VM1 PING VM2 :- ping 10.0.2.5  if it working the stooped by ctrl + z
+
+NOW CREATE A FILE IN VM1 :- touch transfer.txt
+
+NOW WRITE INTO FILE :- nano transfer.txt
+
+AND SAVE THE FILE :- ctrl + x then Y and Then ENTER
+
+SEE CONTENT IN FILE :- cat transfer.txt
+
+NOW NEED USER NAME OF VM2 SO IN VM2 :- ls /home
+
+now vm2 path for tansfer the file from vm1 to vm2 :- ls /home/vagrant/
+
+now in vm1 :- scp transfer.txt vagrant@10.0.2.5:/home/vagrant
+
+now enter password :-- vagrant
+
+FILE TRANSFERED
+
+NOW IN VM2 RUN :- ls /home/vagrant/
+
+AND CAT  TO SEE RESULT :- cat transfer.txt
+
+
+
+
+
+
+
+
+
+
+
