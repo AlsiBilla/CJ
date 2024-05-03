@@ -1,0 +1,24 @@
+<script type="module">
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+
+
+// replace this
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC-yqoIEsjsYGoMkeCPb0nRSt5pjgYQOBA",
+    authDomain: "application-a7971.firebaseapp.com",
+    projectId: "application-a7971",
+    storageBucket: "application-a7971.appspot.com",
+    messagingSenderId: "777550458658",
+    appId: "1:777550458658:web:0979bc50a0d00d09903f7b",
+    measurementId: "G-GHZTK66W2Z"
+  };
+
+//
+
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
