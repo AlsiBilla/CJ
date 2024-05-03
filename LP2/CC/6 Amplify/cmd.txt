@@ -1,12 +1,15 @@
 Login to AWS SERVICE 
 
 sejujam0327@gmail.com
-Avav@1633
+
 
 NOW SEARCH Amplify 
 
 Now Click Create New App
 Select GitHub and Next Login To GitHub
+
+krishna.sonawane03@gmail.com
+
 Select Repository and Next
 Now Deploy App
 
