@@ -1,0 +1,17 @@
+FIRST INSTALL NODE JS AND NPM
+
+OPEN FOLDER YOU DOWNLOADED
+
+OPEN THE FOLDER PATH IN TERMINAL
+
+  npm init
+ 
+  npm install express
+
+  node app.js
+
+AND DONE OPEN TEH LOCAL HOST LINK
+
+ 
+  
+
