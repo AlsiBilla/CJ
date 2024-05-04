@@ -1,0 +1,33 @@
+Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+
+NOW OPEN THE FOLDER YOU WANT TO UPLOAD ON GITHUB REPO AND THEN RIGHT CLICK AND SHOW MORE   OPTION AND CLICK OPEN GIT BASH HERE
+
+NOW WE ARE IN THE GIT BASH CMD
+
+  git status 
+
+IGNORE ERROR
+
+  git init
+
+  git add .
+
+  git commit -m "Adding Files"
+
+  git branch -M main
+
+NOW PROVIDE THE LINK OF REPOSITORY FROM THE GITHUB.COM WHICH YOU HAVE CREATED
+
+  git remote add origin https://github.com/TechnoMelon/test.git
+
+  git push -u origin main
+
+NOW YOU NEED TO LOGIN TO GITHUB ACCOUNT AND DONE SUCCESSFULLY
+
+
+
+
+EXISTING REPOSITORY PUSH CMD
+git remote add origin https://github.com/TechnoMelon/test.git
+git branch -M main
+git push -u origin main
