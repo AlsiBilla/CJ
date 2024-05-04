@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <button type="submit">Register</button>
+    </form>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const gender = document.getElementById('gender').value;
+            
+            const userData = {
+                name: name,
+                gender: gender
+            };
+            
+            // Sending data to server (localStorage in this case)
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(userData);
+            localStorage.setItem('users', JSON.stringify(users));
+            
+            alert('User registered successfully!');
+            location.href = 'data.html'; // Redirect to data page
+        });
+    </script>
+</body>
+</html>

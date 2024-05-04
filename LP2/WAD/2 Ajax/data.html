@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <ul id="userList"></ul>
+    <button onclick="goBack()">Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Retrieving and displaying user data
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const userList = document.getElementById('userList');
+        users.forEach(function(user) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Name: ${user.name}, Gender: ${user.gender}`;
+            userList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
