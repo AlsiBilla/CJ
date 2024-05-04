@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<input type="text" #naam placeholder="Name"><br>
+<input type="text" #add placeholder="Address"><br>
+<input type="number" #no placeholder="MOB_NO"><br>
+<input type="email" #email placeholder="Email"><br>
+<input type="password" #password placeholder="Password"><br>
+
+<button (click)="getValue(naam.value,add.value,no.value,email.value)">Register</button>
+
+<h1>Your Data</h1>
+
+<p>name:{{dnaam}}</p>
+<p>address:{{dadd}}</p>
+<p>contact:{{dno}}</p>
+<p>email:{{demail}}</p>

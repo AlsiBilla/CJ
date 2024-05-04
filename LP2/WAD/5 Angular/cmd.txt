@@ -1,0 +1,21 @@
+FIRST INSTALL NODE JS AND NPM
+
+  npm --version
+
+NOW INSTALL ANGULAR
+
+  npm install -g @angular/cli
+
+  ng new first-project
+
+  SELECT STYLESHEET FORMAT css amd SSR & SSG as Y
+
+NOW OPEN THE FOLDER THEN OPEN SRC THEN APP AND THEN app.component.html and delete all code 
+  
+NOW ADD REPLACE TO CODE app.component.html and app.component.ts
+
+and open then path in cmd
+  
+  ng serve
+
+AND DONE OPEN IT IN LOCALHOST
