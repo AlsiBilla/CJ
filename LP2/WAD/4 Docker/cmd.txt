@@ -15,3 +15,37 @@ node script.js
 docker build -t desk .
 
 docker images
+
+
+
+
+///END
+
+docker ps 
+
+docker pull openjdk
+
+docker run --name JAVA -it -d openjdk
+
+docker ps
+
+docker exec -it JAVA jshell
+
+System.out.println("Hello Docker");
+
+int a = 5
+
+int b = 9
+
+System.out.println(a+b);
+
+/exit
+
+docker stop doc_id
+
+docker container rm doc_id
+
+docker ps 
+
+docker images
+
