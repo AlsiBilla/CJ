@@ -1,0 +1,17 @@
+DOWNLOAD DOCKER DESKTOP
+
+DOWNLOAD NODE JS  
+
+DOWN EXTENTION IN VS CODE DOCKER OF MICROSOFT
+
+OPEN THE DESK FOLDER 
+
+AND OPEN NEW TERMINAL
+
+docker --version
+
+node script.js
+
+docker build -t desk .
+
+docker images
