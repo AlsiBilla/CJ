@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Scheduling-Algorithm-in-CloudSim/src"/>
+	<classpathentry kind="lib" path="D:/WORK SPACE/GITHUB REPOSITORY/CJ/LP2/CC/3 Cloud Sim/aj/Scheduling-Algorithm-in-CloudSim/cloudsim-4.0.jar"/>
+	<classpathentry kind="lib" path="D:/WORK SPACE/GITHUB REPOSITORY/CJ/LP2/CC/3 Cloud Sim/aj/Scheduling-Algorithm-in-CloudSim/cloudsim-examples-4.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
