@@ -1,0 +1,39 @@
+import requests
+import bs4
+
+
+
+request1=requests.get('https://www.amazon.in/Sterling-Pendant-Necklace-Rhodium-Zirconia/dp/B09XNB3DZX/ref=lp_90919850031_1_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=90ZGNBAAE88Y3XJH8PW6')
+request1
+
+
+
+request1.content
+
+
+
+soup=bs4.BeautifulSoup(request1.text)
+soup
+
+
+
+reviews=soup.findAll('div',{'class' : 'a-row'});
+for review in reviews:
+  print(review.get_text() + "\n\n")
+
+
+
+ratings = soup.find('span',{'class':'a-size-medium a-color-bas'})
+print(ratings)
+
+
+
+Indivisual_ratings = soup.find_all('div',{'id' : 'averageCustomerReviews'});
+for indi_rating in Indivisual_ratings:
+  print(indi_rating.get_text()+ "\n")
+
+
+
+customer_name = soup.find_all('div',{'class':'a-profile-content'});
+for cust_name in customer_name:
+  print(cust_name.get_text() + "\n")
