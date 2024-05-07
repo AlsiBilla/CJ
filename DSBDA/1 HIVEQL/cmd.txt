@@ -1,0 +1,5 @@
+INSTALL CLOUDERA ZIP FILE FROM :- https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip
+
+CREATE A NEW OS LINUX AND RED HAT 64
+
+SYSTEM PROCESSOR 2 AND IN NETWORK ATTACHED TO BRIDGED ADAPTER
